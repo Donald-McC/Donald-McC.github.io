@@ -1,10 +1,10 @@
 
  const active = {
-    display: block
+    display: 'block'
 }
 
 const hidden = {
-    display: none
+    display: 'none'
 }
 
 
