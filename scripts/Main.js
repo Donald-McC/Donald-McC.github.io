@@ -1,0 +1,43 @@
+
+ active : {
+    display: 'active'
+}
+
+hidden : {
+    display: 'none'
+}
+
+
+
+
+var panelControl = {
+    panelIndex: 0,
+    nextPanel : function (){
+
+    },
+    prevPanel : function () {
+
+    },
+    slidePanel : function (input) {
+        let panels = Document.getElementsByClassName('panel');
+        let navs = Document.getElementsByClassName('navButton');
+
+        if(input > panels.length){
+            this.panelIndex = 0;
+        }
+        if(input < 0){
+            this.panelIndex = panels.length - 1;
+        }
+
+        for(let x = 0; x < panels.length; x++){
+            panels[i].style.display = 'none';
+            navs[i].style = hidden
+        }
+
+        panels[this.panelIndex].style.display = 'block';
+        navs[this.panelIndex].stlye = active;
+
+    }
+}
+
+panelControl.slidePanel(0);
