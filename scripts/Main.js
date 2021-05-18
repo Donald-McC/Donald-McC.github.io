@@ -19,8 +19,8 @@ var panelControl = {
 
     },
     slidePanel : function (input) {
-        let panels = Document.getElementsByClassName('panel');
-        let navs = Document.getElementsByClassName('navButton');
+        let panels = document.getElementsByClassName('panel');
+        let navs = document.getElementsByClassName('navButton');
 
         if(input > panels.length){
             this.panelIndex = 0;
