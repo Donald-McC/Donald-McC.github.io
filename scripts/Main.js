@@ -19,6 +19,7 @@ var panelControl = {
 
     },
     slidePanel : function (input) {
+        console.log('sliding over panel');
         let panels = document.getElementsByClassName('panel');
         let navs = document.getElementsByClassName('navButton');
 
