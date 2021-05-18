@@ -30,8 +30,8 @@ var panelControl = {
         }
 
         for(let x = 0; x < panels.length; x++){
-            panels[i].style.display = 'none';
-            navs[i].style = hidden
+            panels[x].style.display = 'none';
+            navs[x].style = hidden
         }
 
         panels[this.panelIndex].style.display = 'block';
