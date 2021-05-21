@@ -1,9 +1,9 @@
 
- const active = {
+const active = {
     display: 'block'
 }
 
-const hidden = {
+const inactive = {
     display: 'none'
 }
 
@@ -35,13 +35,14 @@ var panelControl = {
         //  --------------------------------------------------
 
         for(let x = 0; x < panels.length; x++){
-            console.log('x: ' + x);
             panels[x].style.display = 'none';
-            navs[x].style = hidden
+            navs[x].style = inactive;
+            navs[x].className = navs[x].className.replace(' active', '');
         }
 
         panels[this.panelIndex].style.display = 'block';
         navs[this.panelIndex].stlye = active;
+        navs[this.panelIndex].className += ' active';
 
     }
 }
