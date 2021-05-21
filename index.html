@@ -6,15 +6,19 @@
         <title>Donald McCartney - Portfolio</title>
     </head>
     <body>
-        <H1 id='name'>Donald McCartney</H1>
-        <p>ver: 0.1.11</p>
-        <h3>a little about me...</h3>
+        <div id='Title-Panel'>
+            <H1 id='name'>Donald McCartney</H1>
+            <p>ver: 0.1.12</p>
+            <h3>a little about me...</h3>
+        </div>
         <div id='container'>
             <nav id='nav-panel'>
-                <button onClick={panelControl.slidePanel(0)} class='navButton'>Home</button>
-                <button onClick={panelControl.slidePanel(1)} class='navButton'>About Me</button>
-                <button onClick={panelControl.slidePanel(2)} class='navButton'>Contact Me</button>
-                <button onClick={panelControl.slidePanel(3)} class='navButton'>My Work</button>
+                <div id='nav-container'>
+                    <button onClick={panelControl.slidePanel(0)} class='navButton'>Home</button>
+                    <button onClick={panelControl.slidePanel(1)} class='navButton'>About Me</button>
+                    <button onClick={panelControl.slidePanel(2)} class='navButton'>Contact Me</button>
+                    <button onClick={panelControl.slidePanel(3)} class='navButton'>My Work</button>
+                </div>
             </nav>
 
             <div id='panels'>

@@ -20,10 +20,13 @@ body {
   }
   
   #nav-panel {
-    display: flex;
-    margin: auto;
     border: 1px solid blue;
-    text-align: center;
+  }
+  
+  #nav-container {
+    display: flex;
+    width: 50%;
+    margin: auto;
   }
   
   #container {
