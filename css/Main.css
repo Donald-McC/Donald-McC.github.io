@@ -1,63 +1,293 @@
+@font-face {
+  font-family: 'dev';
+  src: url('https://drive.google.com/file/d/1OJsSmu8pOCaN0K775hC54TR9RKtgO6Cb/view?usp=sharing');
+  font-weight: normal;
+  font-style: normal;
+}
 
-html, body {
-    height: 100%;
+@font-face {
+  font-family: 'arsenalregular';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.woff') format('woff'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.ttf') format('truetype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.svg#arsenalregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+/*======================/Variables/==================*/
+
+:root {
+--Dark-Bg: #17181e;
+--XDark-Bg: #111217;
+--Main-Purple: #7532df;
+--Hover-Purple: #1c1930;
+--Dark-Purple: #262240;
+--P-Green: #6CAA46;
+--L-Blue: #3DAEFF;
+--Orange: #EA5F39;
+}
+
+/*====================/End Variables/================*/
+
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  
+  
+}
+
+body, html {
+height: 100%;
+margin: 0;
+padding: 0;
+overflow: hidden;
 }
 
 body {
-    margin: 0;
-    padding: none;
-    background-color: #17181e;
-    border: 4px solid yellow;
-  
-  }
-  
-  #name {
-  
-  }
-  
-  #Title-Panel {
-    padding: 10px;
-    background-color: #111217;
-    color: #7532df;
-    text-shadow: 5px 5px 3px #262240;
-    height: 20%;
-  }
-  
-  #nav-panel {
-    border: 1px solid blue;
-  }
-  
-  #nav-container {
-    display: flex;
-    width: 50%;
-    margin: auto;
-  }
-  
-  #container {
-    height: 100%;
-    color: white;
-    border: 10px solid white;
-    background-color: #17181e;
-    
-  }
-  
-  .panel {
-    height: 33em;
-    border: 4px solid green;
-  }
-  
-  button {
-    height: 5em;
-    width: 5em;
-    margin: 3px 10px 3px 10px;
-    border-radius: 50%;
-    border: none;
-    background-color: #262240;
-    color: white;
-    overflow: hidden;
-    
-  }
-  
-  .active {
-    background-color: #7532df;
-  }
+}
+
+#total {
+}
+
+/*==================/Size Stuff/======================*/
+
+#Title-Panel, #nav-panel {
+height: 10%;
+}
+#container, #panels {
+height: 90%;
+/*padding-bottom: 10%*/
+}
+#total, #nav-container, .navButton, .panel, #projects-container, .flip-card-inner, .flip-card-front, .flip-card-back {
+height: 100%;
+}
+/*=====================/Colors/========================*/
+/*-----Background------*/
+
+/*--------Font---------*/
+/*=================/Title Panel/========================*/
+
+#Title-Panel {
+background-color: var(--XDark-Bg);
+font-size: 3vh;
+overflow: hidden;
+color: white;
+border-bottom: 5px solid var(--P-Green);
+display: flex;
+padding: 1vh 2vh 1vh 2vh;
+
+}
+
+#name {
+color: var(--Main-Purple);
+text-shadow: 2px 2px 5px var(--Dark-Purple);
+font-family: dev
+}
+
+#version {
+flex-align: flex-end;
+align-self: center;
+}
+
+/*=============================================*/
+#container {
+background-color: red ;
+  /*var(--Dark-Bg);*/
+}
+
+
+/*================/Navgation Bar/===================*/
+#nav-panel {
+width: 100%;
+text-align: center;
+background-color: var(--Dark-Purple);
+}
+
+#nav-container {
+width: 50vw;
+margin: auto;
+display: flex;
+justify-content: space-evenly;
+}
+.navButton {
+font-size: 3vh;
+width: 20%;
+border: none;
+background-color: #262240;
+color: white;
+overflow: hidden;
+text-align: center;
+}
+
+.navButton:hover:not(.active) {
+background-color: var(--Hover-Purple);
+}
+/*========================================*/
+.active {
+background-color: var(--Main-Purple);
+}
+
+
+#panels {
+background-color: var(--Dark-Bg);
+color: white;  
+}
+
+/*====================/CARDS/=============*/
+
+a.flip-card {
+color: white;
+text-decoration: none;
+}
+.flip-card {
+height: 30vh;
+background-color: transparent;
+perspective: 1000px;
+}
+.flip-card-inner {
+width: 100%;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+  border-radius: 25px;
+  background-color: var(--Hover-Purple);
+
+}
+.flip-card-front {
+overflow: hidden;
+}
+.flip-card-back {
+overflow: auto;
+transform: rotateY(180deg);
+text-align: left;
+padding: 25px;
+line-height: 1.3;
+font-size: 15px;
+}
+.project-image {
+height: 90%;
+max-width: 100%;
+}
+.proj-info {
+color: var(--P-Green);
+}
+
+.proj-details {
+margin: 5px 0;
+}
+/*===============/Work Page/===============*/
+
+#Work-Panel {
+text-align: center;
+background-color: transparent;
+}
+
+#projects-container {
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+
+}
+
+#other-projects, #Work-Container {
+display: grid;
+grid-row-gap: 1vw;
+}
+
+#other-projects {
+grid-template-columns: auto;  
+}
+
+#Work-Container {
+grid-template-columns: auto auto auto;
+grid-column-gap: 1vw;
+}
+
+#Work-Panel H2 {
+font-size: 5vh;
+}
+
+#Work-Panel H3:not(.passion, .future) {
+font-size: 2vh;
+margin: 10px;
+color: var(--P-Green);
+}
+
+
+#proj-type {
+display: flex;
+justify-content: space-evenly;
+color: white;
+}
+
+#passion_future, #other-projects {
+width: 20%;
+}
+
+#completed-projs, #Work-Container {
+width: 60%;
+}
+
+.passion {
+color: var(--L-Blue);
+}
+.future, .strong {
+color: var(--Orange);
+}
+
+/*===============/Skill Page/===============*/
+
+#Skill-Panel {
+text-align: center;
+}
+
+#Skill-Panel H2 {
+font-size: 40px;
+}
+
+.skill-wrapper {
+background-color: blue;
+height: 50%;
+width: 75%;
+margin: auto;
+margin-top: 25px;
+margin-bottom: 25px;
+display: grid;
+grid-template-columns: auto auto;
+}
+
+.skill-container {
+text-align: left;
+background-color: green;
+padding: 25px;
+padding-left: 25%;
+font-size: 1.5vw;
+
+
+}
+
+#tools {
+grid-column: 1 / span 2;
+padding-left: 30vw;
+}
+
+.skill-category {
+text-decoration: underline;
+}
