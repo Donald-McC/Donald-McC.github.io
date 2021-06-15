@@ -53,6 +53,8 @@ var panelControl = {
     }
 }
 
+
+console.log("TESTING IF SCRIPT RUNS!!!!!!!!!!");
 panelControl.setup();
 panelControl.slidePanel(0);
 
