@@ -21,7 +21,7 @@ var panelControl = {
     setup : function () {
         let buttons = document.getElementsByClassName('navButton');
         for(let x = 0; x < buttons.length; x++){
-            buttons[x].addEventListener("click", panelControl(x), false);
+            buttons[x].addEventListener("click", this.slidePanel(x), false);
         }
     },
     slidePanel : function (input) {
