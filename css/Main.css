@@ -298,6 +298,7 @@ width: 70%;
 text-align: left;
 overflow: none;
 font-size: 2vh;
+margin-top: 1vh;
 }
 
 
@@ -322,6 +323,7 @@ align-self: center;
 
 #about-inner-container p {
 line-height: 1.5;
+font-size: 2.5vh;
 }
 
 #about-container H2 {
@@ -329,12 +331,26 @@ padding: 3vh 0;
 color: var(--P-Green);
 }
 
+#about-inner-container p, H2 {
+margin-top: 2vh;
+}
+
+#about-intro-text {
+font-size: 4vh;
+font-weight: bold;
+}
+
 /*=============/Contact/=================*/
 
 #form-contact {
 display: grid;
-width: 20vw;
+width: 50%;
+padding: 2%;
 margin: auto;
+margin-top: 10vh;
+background-color: var(--Dark-Purple);
+border: 3px groove var(--Main-Purple);
+border-radius: 25px;
 }
 
 #form-button-container {
@@ -356,6 +372,7 @@ background-color: var(--Hover-Purple);
 #comment-box {
 resize: none;
 overflow: auto;
+width: 100%;
 }
 
 /*===============/Home/=============*/
@@ -375,7 +392,7 @@ background-color: var(--Dark-Purple);
 text-align: center;
 padding: 1vh 2vw;
 height: 5vh;
-width: 40%;
+width: 15vw;
 margin-top: 1vh;
 margin-right: 1vw;
 overflow: none;
@@ -432,5 +449,12 @@ margin-left: 2vw;
 color: var(--L-Blue);
 }
 #YOU {
+color: var(--P-Green);
+}
+
+.emphasisB {
+color: var(--L-Blue);
+}
+.emphasisG {
 color: var(--P-Green);
 }
