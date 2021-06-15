@@ -5,20 +5,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'arsenalregular';
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.eot');
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.woff2') format('woff2'),
-       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.woff') format('woff'),
-       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.ttf') format('truetype'),
-       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.svg#arsenalregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
 
 /*======================/Variables/==================*/
 
