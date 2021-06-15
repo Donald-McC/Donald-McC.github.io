@@ -1,8 +1,21 @@
 @font-face {
   font-family: 'dev';
-  src: url('fonts\Developer.ttf');
+  src: url('https://drive.google.com/file/d/1OJsSmu8pOCaN0K775hC54TR9RKtgO6Cb/view?usp=sharing');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'arsenalregular';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.woff') format('woff'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.ttf') format('truetype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/133207/arsenal-regular-webfont.svg#arsenalregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 
@@ -74,10 +87,10 @@ padding: 1vh 2vh 1vh 2vh;
 
 }
 
-#name {
+.name  {
 color: var(--Main-Purple);
-text-shadow: 2px 2px 5px var(--Dark-Purple);
-font-family: dev
+font-family: dev;
+font-weight: bold;
 }
 
 #version {
@@ -123,6 +136,9 @@ background-color: var(--Hover-Purple);
 background-color: var(--Main-Purple);
 }
 
+.panel {
+overflow: auto;
+}
 
 #panels {
 background-color: var(--Dark-Bg);
@@ -245,36 +261,176 @@ color: var(--Orange);
 text-align: center;
 }
 
-#Skill-Panel H2 {
-font-size: 40px;
-}
 
-.skill-wrapper {
-background-color: blue;
-height: 50%;
-width: 75%;
+.skill-wrapper{
+width: 60%;
 margin: auto;
 margin-top: 25px;
 margin-bottom: 25px;
 display: grid;
-grid-template-columns: auto auto;
+grid-template-columns: 1fr 1fr;
 }
 
 .skill-container {
-text-align: left;
-background-color: green;
-padding: 25px;
-padding-left: 25%;
+text-align: center;
 font-size: 1.5vw;
-
-
+height: 25vh;
+width: 75%;
+margin: auto;
+margin-bottom: 5vh;
+background-color: var(--Dark-Purple);
+border-radius: 10px;
+overflow: none;
 }
 
-#tools {
-grid-column: 1 / span 2;
-padding-left: 30vw;
-}
+
 
 .skill-category {
-text-decoration: underline;
+text-align: center;
+width: 100%;
+margin: auto;
+border-bottom: 3px solid var(--P-Green);
+}
+
+.skill-list {
+max-height: 100%;
+width: 70%;
+text-align: left;
+overflow: none;
+font-size: 2vh;
+}
+
+
+
+ul {
+display: inline-block;
+}
+/*================/About/==================*/
+
+#about-outer-container {
+display: flex;
+width: 80%;
+margin: auto;
+padding: 5vh 2vw;
+}
+
+#self-img {
+height: 40vh;
+padding-right: 2vw;
+align-self: center;
+}
+
+#about-inner-container p {
+line-height: 1.5;
+}
+
+#about-container H2 {
+padding: 3vh 0;
+color: var(--P-Green);
+}
+
+/*=============/Contact/=================*/
+
+#form-contact {
+display: grid;
+width: 20vw;
+margin: auto;
+}
+
+#form-button-container {
+display: flex;
+}
+
+#form-button-container input {
+margin: 1vh 1vw 0 0;
+width: 40%;
+background-color: var(--Dark-Purple);
+color: white;
+border-color: var(--Main-Purple);
+}
+
+#form-button-container input:hover{
+background-color: var(--Hover-Purple);
+}
+
+#comment-box {
+resize: none;
+overflow: auto;
+}
+
+/*===============/Home/=============*/
+
+
+/*=============/Buttons/============*/
+
+/*
+style certain links as buttons
+*/
+
+.button-link {
+display: inline-block;
+color: white;
+text-decoration: none;
+background-color: var(--Dark-Purple);
+text-align: center;
+padding: 1vh 2vw;
+height: 5vh;
+width: 40%;
+margin-top: 1vh;
+margin-right: 1vw;
+overflow: none;
+border: 2px groove var(--Main-Purple);
+}
+
+.button-link:hover {
+background-color: var(--Hover-Purple);
+}
+
+#contact-top{
+margin: auto;
+width: 50%;
+margin-top: 3vh;
+margin-bottom: 3vh;
+text-align: center;
+}
+
+#contact-buttons-container {
+display: flex;
+width: 100%;
+margin: auto;
+}
+
+#in {
+display: inline-block;
+text-align: center;
+width: 3vw;
+height: 3vw;
+background-color: blue;
+border-radius: 2px;
+align-self: center;
+}
+
+#home-intro-container {
+width: 50vw;
+margin: auto;
+margin-top: 20vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#intro-image {
+max-height: 40vh;
+}
+
+#home-intro-text-container {
+font-size: 4vh;
+margin-left: 2vw;
+}
+
+#I-Build {
+color: var(--L-Blue);
+}
+#YOU {
+color: var(--P-Green);
 }

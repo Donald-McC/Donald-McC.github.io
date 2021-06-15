@@ -6,245 +6,30 @@
         <title>Donald McCartney - Portfolio</title>
     </head>
     <body>
-        <div id='total'>
-          <div id='Title-Panel'>
-            <H1 class='item' id='intro'>Hi, I'm <span id='name'></span></H1>
-            <p id ='version' class='item'>ver: 0.1.10</p>
-          </div>
-          <div id='container'>
-            <nav id='nav-panel'>
-                 <div id='nav-container'>
-                  <button onClick='panelControl.slidePanel(0)' class='navButton'>Home</button>
-                  <button onClick='panelControl.slidePanel(1)' class='navButton'>About</button>
-                  <button onClick='panelControl.slidePanel(2)' class='navButton'>Contact</button>
-                   <button onClick='panelControl.slidePanel(3)' class='navButton'>Skills</button>
-                  <button onClick='panelControl.slidePanel(4)' class='navButton'>Work</button>
-                </div>
-              </nav>
-            <div id='panels'>
-                  <div id='Home-Panel' class='panel'>
-                      <H2>Home</H2>
-                       <p>testing...</p>
-                                         
-                  </div>
-                  <div id='About-Panel' class='panel'>
-                      <H2>A little about me...</H2>
-                  </div>
-                  <div id='Contact-Panel' class='panel'>
-                      <H2>Lets get in touch!</H2>
-                  </div>
-                  <div id='Skill-Panel' class='panel'>
-                    <H2>My Skills!</H2>
-                    <div class='skill-wrapper'>
-                      <div id='languages' class='skill-container'>
-                        <H4 class='skill-category'>Languages:</H4>
-                        <ul class='skill-list'>
-                          <li>JavaScript</li>
-                          <li>C#</li>
-                          <li>C++</li>
-                          <li>SQL</li>
-                        </ul>
-                      </div>
-                      <div id='soft-skills' class='skill-container'>
-                        <H4 class='skill-category'>Soft-Skills:</H4>
-                        <ul class='skill-list'>
-                          <li>Positive, Friendly Attidtude!</li>
-                          <li>Patient and Honest</li>
-                          <li>Good Written/Verbal Communication</li>
-                          <li>Good Interpersonal Skills</li>
-                          <li>Strong Work Ethic</li>
-                        </ul>
-                      </div>
-                      <div id='tools' class='skill-container'>
-                        <H4 class='skill-category'>Tools:</H4>
-                        <ul class='skill-list'>
-                          <li>React</li>
-                          <li>Github</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class='edu-wrapper'>
-                      <div id='learning' class='skill-container'>
-                        <H4 class='skill-category'>What I'm Learning:</H4>
-                        <ul class='skill-list'>                      </ul>
-                      </div>
-                      <div id='edu-training' class='skill-container'>
-                        <H4 class='skill-category'>Education and Training:</H4>
-                        <ul class='skill-list'>
-                          <li>BA - Computer Science from Purdue school of Science at I.U.P.U.I.</li>
-                          <ul id='certifications'>
-                            <H4>Certifications:</H4>
-                            <li><a href='https://freecodecamp.org/certification/fcce229123b-eb81-4407-9c8c-9eb4252ac28f/responsive-web-design'>Responsive Web Design</a> - freeCodeCamp.org</li>
-                            <li><a href='https://freecodecamp.org/certification/fcce229123b-eb81-4407-9c8c-9eb4252ac28f/javascript-algorithms-and-data-structures'>JavaScript Algorithms and Data Structures</a> - freeCodeCamp.org</li>
-                            <li><a href='https://freecodecamp.org/certification/fcce229123b-eb81-4407-9c8c-9eb4252ac28f/front-end-libraries'>Front End Libraries</a> - freeCodeCamp.org</li>
-                          </ul>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div id='Work-Panel' class='panel'>
-                    <div class='intro'>
-                      <H2 class='page-title'>My Projects!</H2>
-                      <H3><strong>**click cards to go to project page**<strong></h3>
-                    </div>
-                    <div id='grid-separator'>
-                      <div id='proj-type'>
-                        <H3 id='passion_future'><span class='passion'>Passion</span>/<span class='future'>Future</span> Projects:</H3><H3 id='completed-projs'>Completed Projects:</H3>
-                      </div>
-                      <div id='projects-container'>
-                        <div id='other-projects'>
-                          <a id='Character-Sheet' class='flip-card' href=''>
-                          <div class='flip-card-inner'>
-                            <div class='flip-card-front'>
-                              <H3 class='passion'>Character Sheet</H3>
-                              <img class='project-image' src='https://lh3.googleusercontent.com/wQqF77ClNICaR_AqAOoEbmMgVpSig-bpw866pjJP7zVEzR9nM5kORNVp756N0HpLMlfLVqYiw3hZY-dy-UMJRlMD97txxhrwTY8T57tIwtfOO8_xM2ycgs_vJY2Z6NXMBqAwhDQMKLVkNIo-_EAvu6bB0_98AagAWggvSrampshBolr3so6bDfBEzl_7LqNecwRxd6DJoNETWGXESVuGDgCm4Hbw5gBhWdNsIkhAc1BlsaTo0mtKl0aPp_xaPvJYpU2PnxLJwTxeu07AM4vk97lxiKSG2C67p8nbbx4SaQ_vP2tSImInnqYioiCZViz7vveVddGkU6LL8ZLHv8y8T1lZH8aJ7FMKCvSXCS5xUcUDvOOlegJwzkgAHpya4POfkQYHAzsj1BpTP4aZ4a-jyeN_VSA2dF4IFvQWZOKRCM0kpGCejjmXvuiNmOgs9aWDbtgVEV1l8x-iHygqM0G8eVBxeGofj3p6As4O8r2v4W8WCiEMcREDZ77fEfM5ltR_KSzdsoTwy5Gf7hqqnR2vS02NBmTZOYbK8K-H1GGyNO-i_zjLPRxSBKJQzm5OuGaOwaNjx2j8u1bsyRyI-1WgJv-2xkdOeVkAIxiddEHVp4zCAwXOGeO7YjchxlHMxYxzRw4l86NWgzLvGqcF7pRY50VfNXE1sWXQhMDjYB6y6BvCfF5CL7KuDM_hc_y1drxoiujSgB5FezNEtl8aJM9ZFw=w328-h320-no?authuser=4'>
-                            </div>
-                            <div class='flip-card-back'>
-                              <p class='proj-info'>Source: passion project</p>
-                              <p class='proj-info'>Details: </p>
-                              <p class='proj-details'>This project is something I've been building in <strong class='strong'>Unity</strong>. It is a digital character sheet for table-top games (currentlty built around <strong class='strong'>D&D 5e</strong>). It differs from its main competition in its style. The animated health/mana globes and the dungeon asthetic makes it more exciting than just a piece of paper. Additionally Its final form will have spell notes for quick reference and a note taking app built in. This way the user doesn't have to leave the app for anything: taking notes, looking up spells, checking their bonuses. It's all at their fingertips in one app! </p>
-                              <p class='proj-info'>Looking Forward:</p>
-                              <p class='proj-details'>
-                                This is a work in progress that I am continuing work on. Looking forward I am working on a login/authentication and character saving system. I would like to add class abilities/feats and get a good working note system. I would like to base it off of one note a bit, specifically the ability to make a link to another sheet for quick reference. Finally I would like to hire an artist to do some of the images. The globes and dungeon asthetics are free licesnsed but I need new images for many of the menu items.
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                          <a id='To-Do_List' class='flip-card' href=''>
-                            <div class='flip-card-inner'>
-                              <div class='flip-card-front'>
-                                <H3 class='future'>To-Do List</H3>
-                                <p>Image is placeholder only</p>
-                                <img class='project-image' src='https://sathyanand.files.wordpress.com/2015/09/to-do-list1.jpg'>
-                              </div>
-                              <div class='flip-card-back'>
-                                <p class='proj-info'>Source: passion project</p>
-                                <p class='proj-info'>Details: </p>
-                                <p class='proj-details'>This is a future project I will be working on. It will be created using <strong class='strong'>React</strong>. It will be a simple to-do list app that allows user to add and remove items from said list. I will be making this mainly because It is a common project that shows good knowledge of the React framework.</p>
-                                <p class='proj-info'>Looking Forward:</p>
-                                <p class='proj-details'>
-                                  I would also like to make a vue version as it seems to be a commonly enough used framework.
-                                </p>
-                              </div>
-                            </div>
-                        </a>
-                      </div>
-                        <div id='Work-Container' class=' grid-page'>
-                          <a id='Calculator' class='flip-card' href='https://codepen.io/Malik_Mortis/pen/ZELKGNN?editors=0010'>
-                            <div class='flip-card-inner'>
-                              <div class='flip-card-front'>
-                                <H3>Calculator</H3>
-                                <img class='project-image' src='https://lh3.googleusercontent.com/-k3PK8KEWyzLzqKsheRacBKu0n_iG_VpJRZz7DBBwJEENxk-yer4dxfVjar34zqFa9PEs2qoRArt_vVrMa86Ml-7_63uXFnNH9Uu4o7mwRR0uIs6sFVrbtmO9DWAyh-a42scZ6J8ID-LvyEoCh2WJeA3lI8hu3rRcYFbeC3GaTY3E-HHveaGbJDjYckvdYcY4P_MopCx4RnC09oJ8q77qvi7T9mxgkjRrTq9UJckt98PCpW0OJm9KZHTEHAUUJORQJgQhC450EFLK-uYgJx_QBbRewXNsmlI64HHKXAgSeL5S-BHaOPZrjpxoYl8rup3v3gqQADXpMYVP1u7G1buf776_ttr7IlQLcrO4ffVb-ptJupCxLPeOQjK5BxZFzl1nVeRQwpvZeVOlnQlBPDEZ_kIqMMnvfDY3rtRTZzcKTK1NtF84Bt-3r1IMGdw7UDqtR5gDXzQJg4mnHl6ZlLDdHbUTmu0qOMkwr253lI-nwmOsSDbAbHrUEKVd8u0ZI1l47sZih0f7Hm7SBt8_y2UN0fHC9PdofSn5TGBxbO5iqqvraB-KkC818eoyRE6wJzAyO4sQSjnE2sXrZbiXiyayZFOwcITeWmXwhuBZlkVITYlxXr-vrdf7FsFcJMpxRqQqU4pYBCBZ8vyIC9uAdenXHgTNCI8MLTxQtpvm-SMmo2ID2mcS115FlC_GYPPuMO5PBJR-X7wCDfE8G_8KKY7Aw=w191-h192-no?authuser=4'>
-                              </div>
-                              <div class='flip-card-back'>
-                                <p class='proj-info'>Source: certification project</p>
-                                <p class='proj-info'>Details: </p>
-                                <p class='proj-details'>This was a small js calculator that I created using <strong class='strong'>React</strong>. It takes the input as a string, and creates two arrays. One consists of the numbers, the other the operators. Next it removes extraneous decimals and empty nodes. Finally, it adds the numbers and operators to a new array in order, returns to a string to solve with .eval()</p>
-                                <p class='proj-info'>Looking Back:</p>
-                                <p class='proj-details'>Looking back, I'm happy with the project, but would have liked to do it in a more scalable way. Converting the input to __ and using the Command and Factory Pattern. This would allow for more options to be added later (parentheses, log, exponents, etc...)</p>
-                              </div>
-                            </div>
-                          </a>
-                          <a id='Soundboard' class='flip-card' href='https://codepen.io/Malik_Mortis/pen/poNqEGp'>
-                            <div class='flip-card-inner'>
-                              <div class='flip-card-front'>
-                                <H3>Soundboard</H3>
-                                <img class='project-image' src='https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png'>
-                              </div>
-                              <div class='flip-card-back'>
-                                <p class='proj-info'>Source: certification project</p>
-                                <p class='proj-info'>Details: </p>
-                                <p class='proj-details'>
-                                  This project was made using <strong class='strong'>React</strong>. It was a certification project intended to be a drum machine, but I decided to have a little fun with it. I ended up turning it into a soundboard for one of my favorite TV characters, Bender from the 'Futurama' series. It is a simple application, when you click a button it plays a sound and displays a corresponding image, however it does have the additional function of playing sounds with the keyboard. Each button is liked to one of the following keys: Q, W, E, A, S, D, Z, X, C. Finally, I did added a timer, using the timeout cuntion, that resets the image and label to that displayed upon first entering 1 second <strong class='strong'>after the audio finishes</strong>.
-                                </p>
-                                <p class='proj-info'>Looking Back:</p>
-                                <p class='proj-details'>
-                                  I really liked how this project turned out, but I would like to expand on it a bit. Mainly, adding more buttons; Bender is too hilarious to limit to 9 clips! Also I would like to add a character switching option, to allow for some of the hilarious lines of some of the other beloved characters from Futurama.
-                                </p>
-                              </div>
-                            </div>
-                          </a>
-                          <a id='25+5_Clock' class='flip-card' href='https://codepen.io/Malik_Mortis/pen/qBRJQeO?editors=1111'>
-                            <div class='flip-card-inner'>
-                              <div class='flip-card-front'>
-                                <H3>25 + 5 Clock</H3>
-                                <img class='project-image' src='https://lh3.googleusercontent.com/MphAYzQjpporWKiMvMOwZY72Q45S5A167cw-YyFd39f1hbgZuBkdbFnTqkVDXKQ-CPUunohXmpHlnxGYnsVCWsVXOd1udC1VeECuuSJsZJgCTu3UOYKTWHt60g2eOsf3pX_8GE-0lUqm_cPGTYZL4zZxmGBytv4M6f5T-Jq1h3w3HgOuIUvqN29YKgfDZQTlyriAdtprDaHZGjLhcKiKOfismUkEW1fw4gOfV6FymjCcxvsxKhnyB8aqRa4hrTv6xK5rf_zxAwiHoYQGRp0-UZxa1vghUbZ5s_kY6HqPDGFZORqvZAPC92d4Bpfh1OpDZF5FkyORreV7aebth1ypBluAVM0OciXd7Gxeoymao1UvqpSIbCLu80KbaId7YG0EE56u3hrkfCPtUmMYL0cXZcOQMrv7InACVHQIvrtSNq0OTDjbkg5G0WxxabVHFMjTmO6M8OToao3x6-7EHmOJTUSRI7THSc8q2nCx_rH3RfByFxgWgkS4IAk9RLlz1XqB7sFyq9WL2P68TQvMxkNM1EswGo0GkLh37H8qB89zQ59im0e-Ijt8SVMIaLSr0yL21LTMl4UUlkH4NmKXnsvZZi3AXu-W4uZUJuMs2-VqZQkMzyQI8nZolhIoxFQPt8xACYaRTbUoXaIsj8h6WdfB2nQBHlFLojywnlovls3Y8o4icPX3OXtM0hx1-6D9UV-iylTOlVyIx66yRXbao_F_rA=w282-h225-no?authuser=4'>
-                              </div>
-                              <div class='flip-card-back'>
-                                <p class='proj-info'>Source: certification project</p>
-                                <p class='proj-info'>Details: </p>
-                                <p class='proj-details'>
-                                  Another <strong class='strong'>React</strong> project, this was to make a workout timer. It has a Session length and a break length, and runs one then the other until stopped. It was a simple yet complicated project. It runs by starting a setInterval() of my cycle() function that runs every second. The cycle function first checks if this is the first cycle, if it isn't it calculates the end time in milliseconds. Then it decrements the time by one second and checks if the timer the timer value. If the value is > 0 it continues updating and moves to the next cycle. If the value is 0 it ensures the 0 value is displayed and continues to the next cycle. On the following cycle, it stops the current interval, and sets the boolean isBreak to !isBreak and starts the next timer based on it's value.
-                                </p>
-                                <p class='proj-info'>Looking Back:</p>
-                                <p class='proj-details'>
-                                  This project was challenging because I ran into a few errors. I wracked my brain to solve the issue and never really did. The '0 should > 0' didn't happen anymore simply because I started over after realizing how i was calculating the end time could be done a lot easier. Instead of using Date I could simply store it as a constant value and decrement 1000 milliseconds every second. This enable a vast simplification of my pause/resume. After hugely simplyfying my solution with this embarrassinly obvious alternative all my errors dissappeard, the clock ran perfectly in testing and finally passed all the tests. So, looking back I gained a greater understanding of some of the time based functions work. (setInterval, Date, setTimeout).
-                                </p>
-                              </div>
-                            </div>
-                          </a>
-                          <a id='Markdown_Viewer' class='flip-card' href='https://codepen.io/Malik_Mortis/pen/BaQOwoO?editors=1010'>
-                            <div class='flip-card-inner'>
-                              <div class='flip-card-front'>
-                                <H3>Markdown Viewer</H3>
-                                <img class='project-image' src='https://lh3.googleusercontent.com/hfSrWSdmdPi6DcepFtyRU4WZ3b0RtWmN_5jhUk8C0Yl5LxkAeyHXOphfV2TwgbaTL2z58vzoFXyIHcG2SxX_RT8x0UYMjTupPlCYrVg6_Jz5ncgKpL7oS8pKtBJg5VrJQfarLScE7imJzxldNVDJqnnzem53jFoiiqOFuCT__CKEemMgF5fgJK9v4YE2_TOviyLLyuJMTujkX6WovENqFhguv4NR6Bws6RdEFTuo5L9uLPFq71irkOJCLeRdt7o6YN39nuHpyDZHkiAW1D_CQN2IMoW-wc3v0uo17x57UUFlthp-ViQm-QMWG_z5W-stqAEs6FD2Ea4gekGro7_kA9jCe2meSwDCT7Zmj2a1yw55JF6_UCLSN5E-4BrUV16Mgc1Vb6D0hwsWnQf2n9E6KsdNzD7nOzS7sCMnO0k1UIS1fCoK9c6O_CtNlkcd7TK-W_-AWZUa46LTrtifIjST4KYk3hjaqZ5oYqEwFLPfQa4FmDvxYe1hpHBHGjZhm2cEBSv2sNbA1ZDHwaYCL7M_LVzMi7pdGwkjEL2YPIHXh_vgthKYIi4ffTAB4xsfu646Mh_Es_91EIc0o1dTMEBYqm-QVyO0OfoB6UhoXkQ1NGf9XFTI_YagQOnLW5WVDS8TirWVb5QDa0BzlcqME8hMysuNX4nFn1dVVEJ2cmbBYmrEGKlJ5JVipDBJM_kvoYzJK4Y-MKqBGbJm-iTxGKt-qg=w660-h459-no?authuser=4'>
-                              </div>
-                              <div class='flip-card-back'>
-                                <p class='proj-info'>Source: certification project</p>
-                                <p class='proj-info'>Details: </p>
-                                <p class='proj-details'>
-                                  Another <strong class='strong'>React</strong> certification project. This was one of, in my opinion, my easier projects. It is a markdown viewer that allows the user to type markdown in the editor and view how it would look on the site in the preview. The editor was the simplest part it simply had a text value that updated with user input. The preview portion simply took the input from editor and displayed it using React's 'dangerouslySetInnerHtml' DOM element. 
-                                </p>
-                                <p class='proj-info'>Looking Back:</p>
-                                <p class='proj-details'>This project was partly to introduce me to markdown and ensure my knowledge of how props works but I felt I did learn one more thing doing this project. I gleaned a slightly better understanding into security. When researching how to display markdown I of course found the Reactjs.org page about DOM elements. There I found the element needed and the obvious warning. I mean, it's right there in the name. This is a useful tool but watch out this can be dangerous!</p>
-                              </div>
-                            </div>
-                          </a>
-                          <a id='Quote_Machine' class='flip-card' href='https://codepen.io/Malik_Mortis/pen/wvojZxO'>
-                            <div class='flip-card-inner'>
-                              <div class='flip-card-front'>
-                                <H3>Quote Machine</H3>
-                                <img class='project-image' src='https://lh3.googleusercontent.com/GBGb_j7DFUvLhSz-eoRAepHwQfmoayEvARBkdeyXpT0YNxs4LDtxbaUEErjXt4AvuShqm7mRnZQD-CwX8HOyU1MjsDS8WN5ynme_lddjblfV85XkgIwY9mG_I0a82360fahd1klFR02Lxzbcmg0NSHS8Kcw1y3XGvXaVhuJHRAXVldKmXm4FjM5qkfGjtNPM4JubNfocKQ3m1Y84FKDmCU5PsTDLm3qSDye3w8GrohfcR5Ug262L7Gx35YW0R3YOM45DhWe1C5MdSKy1IlXF8nAB73EEAIxQszTXqdrPU7iMXzRcel1SEi1qFP3x4j7ue9LKmoYU9eMX-IbP1cFSl_UO7XL3wh7zI-BndhN161alXmupGjTIuF5HctMUI8ufb2pg8lGrgUO6g-euQ_OcWSGDxVqIjNtIkOm9zIyh_-J6uIMYPG6h1_CPgXCFomgJyPaypPEvgOnx2iJX7ZXBadNkRGXg8Ruh0Fi7XBox_L-IK9BrD56fQhbSfCyRx2l6eLaC0ARx6rfdQe2oFNZxt1eV_b6mQne2n9cBj-MUNNBFyHmaENPAxT1WMPUszAu7f4upUWwrf1fWhE4_DKWsMwu7DznzHejdEBgVBM7zUs1UL7Cm6gdpAUrDCGB_jdfRktyVfcYf9Ue31TEgA5CYerAEQ_YywvoD-3kFPMwOhfT5EFfr751nOV6R-kts2Dv_0Kt7je4F7RJCHA02opsbaw=w302-h259-no?authuser=4'>
-                              </div>
-                              <div class='flip-card-back'>
-                                <p class='proj-info'>Source: certification project</p>
-                                <p class='proj-info'>Details: </p>
-                                <p class='proj-details'>
-                                  This was another <strong class='strong'>React</strong> project for certification. The goal was to make a quote machine that randomly generated a different quote each time. I obviously succeeded, but again I had a little bit of fun with it. I used quotes from one of the strangest and funniest characters in the Elder Scrolls series, 'Maiq The Liar'. A reacurring khajit character that always has weird facts or boasts about the world of Elder Scrolls. The project uses 3 arrays of strings for the quote, author, and the game from which the quote originates. I added that last one for fun. The project works by picking a random number between 0 and the length of the arrays - 1. It then gets the data from each array and displays it using setState and {this.state.exampleValue}. To ensure that no quote displays more than once (until it reaches 0 at least) each item is removed from the arrays held by the React object, leaving the originals untouched. When it does eventually reach 0, it resets the arrays and starts again.
-                                </p>
-                                <p class='proj-info'>Looking Back:</p>
-                                <p class='proj-details'>
-                                  Looking back I enjoyed this project despite it's simplicity because I decided to have fun with it. I would however change something. That is how the data is retrieved. I would have liked to try to retrieve the data from the site where I found the quotes, allowing for even more data. More importantly though, I would have liked to use this to implement quotes from other characters I enjoy, perhaps even setting a selector for all charactors, or specific ones! I looked into this, but the largest issue is that the most reliable source for these quotes didn't always have quotes and were sometimes formatted differently as it is a wiki site and thusly can be edited by anyone.
-                                </p>
-                              </div>
-                            </div>
-                          </a>
-                          <a id='API Demo' class='flip-card' href=''>
-                            <div class='flip-card-inner'>
-                              <div class='flip-card-front'>
-                                <H3>API Demo</H3>
-                                <img class='project-image' src=''>
-                              </div>
-                              <div class='flip-card-back'>
-                                <p class='proj-info'>Source: demo</p>
-                                <p class='proj-info'>Details: </p>
-                                <p class='proj-details'>This project is a demo I made to demonstrate fetching data from an API. This example uses a movie api to display movies from a database based on a selected genre. It works by using an async function (await fetch) to fetch data from the API database as a given .json object. Then from the json object it extracts the data and calculates the number of pages based on the results and displays the images of the given indexes. Ex: each page has 16 movies so the 17th movie (index 16) would be the first of page 2. The next/prev/first/last page buttons all work by simply changing the selected indexes and changing the display.</p>
-                                <p class='proj-info'>Looking Back:</p>
-                                <p class='proj-details'>I would like to change how the movies display, specifically to make them more dynamic. As of now it has a set of blocks that take in data. I would like to change it to dynamically create only those it needs, so that when the user gets to the end of the list there aren't empty blocks.</p>
-                              </div>
-                            </div>
-                          </a>
-                      </div>
-                      </div>
-                    </div>
-   
-  
-          
-                    
-                  </div>
-              </div>    
-          </div>
+      <div id='total'>
+        <div id='Title-Panel'>
+          <H1 class='item' id='intro'>Hi, I'm <span class='name' id='name'></span></H1>
+          <p id ='version' class='item'>ver: 1.0</p>
         </div>
+        <div id='container'>
+          <nav id='nav-panel'>
+               <div id='nav-container'>
+                <button onClick='panelControl.slidePanel(0)' class='navButton'>Home</button>
+                <button onClick='panelControl.slidePanel(1)' class='navButton'>About</button>
+                <button onClick='panelControl.slidePanel(2)' class='navButton'>Contact</button>
+                 <button onClick='panelControl.slidePanel(3)' class='navButton'>Skills</button>
+                <button onClick='panelControl.slidePanel(4)' class='navButton'>Work</button>
+              </div>
+            </nav>
+          <div id='panels'>
+                <div id='Home-Panel' class='panel'>
+                  <div id='home-intro-container'>
+                    <img id='intro-image' src='https://lh3.googleusercontent.com/WJ4z2Q4C1tGpAUY0x1zARRWJHXlfXqh6IQ-hTajJGgKGWbzmULF1orv1wgYXEZjC5MiWeRsrbVpuwRXwEVKnvahg5XTCg-NN9G3q75N_IGJOwB_x0qlcXXjiMGgaidg5ZLa8BOO90tEk6jRd53V-HAU-CF13g8iHwIwMiB_sr-BV_tVI_Og2Vyp3MlqmWm4J3zta-ZJgS2IgT6y9RfenkIXHkfvHy-tyiYx67f4p6JzxvTWVyXKLdPatyphCxVAW3XoegFYtHcJWYNOcmqI_a5uaZQ5Qk-s2BqQ_yrTH4_nBLl7C6fPz5XsqexU52bBLwNnQA_WytX9F7Bf-mYcLZe4N_8ytOWTds08auWJ2RynbCKV5Is60iC0bekqfxfyuQu3nh5a2N1buWTRhUh3T1VtNcO_XxW56n7vJ97XXg7UBlDvaaTsh4DPY3ok0ftXn1DENvL0yhZeFfCXjN1lZPc7kpQTElfmLzLuXIFCffH3xC7rmWVTq1SE4EsbLPZ8OahVDPhyVrJ0GF72mYK5w1m73nnTt8v0PN_hhxl_Ajz9kjP0z6HsWbr28uQv_tjuNz-WENLEcws3kLz03tO-G83D6B2AryyDiEE-BulRYrE9jSV8bQUdRKBjhE75tUd77-rYo4pafbaX9S94Lb8ywP0YMlB1gRrrKAOzIu9f3qExMxXlEC_lvTcV4iM9oC0wdJSgf11-t7bCZq1nCxCBc_A=w670-h596-no?authuser=4'>
+                  <div id='home-intro-text-container'>
+                    <p id='home-intro'>Hi, I'm <span id='home-name' class='name'>Donny</span> and I'm a <strong class='strong'>developer!</strong> <span id='I-Build'>I build what <span id='YOU'>YOU</span> need!</span></p>
+            </div>    
+        </div>
+      </div>
         <script src='scripts\Main.js' type='text/javascript'></script>
       </body>
 
