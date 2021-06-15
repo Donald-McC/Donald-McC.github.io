@@ -18,12 +18,12 @@ var panelControl = {
     prevPanel : function () {
 
     },
-    setup : function () {
+    /*setup : function () {
         let buttons = document.getElementsByClassName('navButton');
         for(let x = 0; x < buttons.length; x++){
             buttons[x].addEventListener("click", this.slidePanel(x), false);
         }
-    },
+    },*/
     slidePanel : function (input) {
         this.panelIndex = input;
 
@@ -55,7 +55,7 @@ var panelControl = {
 
 
 console.log("TESTING IF SCRIPT RUNS!!!!!!!!!!");
-panelControl.setup();
+//panelControl.setup();
 panelControl.slidePanel(0);
 
 
