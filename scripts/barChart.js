@@ -3,19 +3,8 @@
 
  //
 
+const data = await fetch(url)
+    .then(reponse => response.json())
+    .then(console.log(data));
 
- 
- const data = function(){
-   const response =  fetch(url)
-     .then(response => response.json())
-     .then(response => {
-       if(!(response.ok)){
-         console.log("fuuuuuuuuuuuuuuuukkkkkkkkkkkkkkkk!!!!!!!!")
-       }
-     }).catch(error => {
-     console.error('There has been a problem with your fetch operation:', error);
-   });
-   return response;
- }
- 
- console.log(data());
+console.log(data);
