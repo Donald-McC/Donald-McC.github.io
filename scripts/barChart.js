@@ -2,9 +2,11 @@
  var url = 'https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json';//
 
  //
+
+
  
  const data = function(){
-   const response =  fetch(this.url)
+   const response =  fetch(url)
      .then(response => response.json())
      .then(response => {
        if(!(response.ok)){
